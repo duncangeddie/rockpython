@@ -1,8 +1,31 @@
+/* Centered intro image only */
+.intro-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0; /* tighter spacing above and below */
+}
+
+.intro-image img {
+    width: 400px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Font face */
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url('/fonts/jetbrains_mono_regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* General body styling */
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #ffffff; /* white background */
-    color: #000000;            /* black text */
+    background: url('/welcome_images/welcome_background.png') no-repeat center center fixed;
+    background-size: cover; /* scales image to fill screen */
+    color: #ffffff;
     margin: 0;
     padding: 0;
 }
@@ -10,13 +33,13 @@ body {
 /* Header styling */
 header {
     height: 60px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #000000;
+    box-shadow: 0 2px 4px rgba(255,255,255,0.1);
     padding: 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #000000;
+    color: #ffffff;
 }
 
 /* Logo */
@@ -60,25 +83,8 @@ header {
 main {
     margin-top: 0;
     text-align: center;
-    padding: 24px;
-    color: #000000;
-}
-
-/* Heading */
-main h1 {
-    font-size: 40px;
-    font-weight: 700;
-    color: #000000;
-    margin-bottom: 16px;
-}
-
-/* Paragraphs */
-.welcome-text {
-    font-size: 18px;
-    color: #333333;
-    max-width: 640px;
-    margin: 0 auto 64px auto;
-    line-height: 1.6;
+    padding: 0; /* removed extra padding so intro image sits closer to header */
+    color: #ffffff;
 }
 
 /* Cards grid */
@@ -88,31 +94,36 @@ main h1 {
     gap: 32px;
     max-width: 960px;
     margin: 0 auto;
-    color: #000000;
+    color: #ffffff;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #000000;
+    color: #ffffff;
+    background-color: #000000;   /* black block */
+    padding: 16px;               /* space inside the block */
+    border-radius: 8px;          /* rounded corners */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5); /* subtle shadow */
 }
 
 .card img {
-    height: 128px;
-    width: 128px;
+    height: 200px;
+    width: auto;
     object-fit: cover;
     margin-bottom: 16px;
 }
 
 .card h2 {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
-    color: #000000;
-    margin-bottom: 8px;
+    color: #ffffff;
+    margin-bottom: 2px;
+    font-family: 'JetBrainsMono', monospace;
 }
 
 .card p {
-    font-size: 16px;
-    color: #333333;
+    font-size: 14px;
+    color: #ffffff;
 }

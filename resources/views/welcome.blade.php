@@ -32,18 +32,16 @@
 
     <!-- Main Content -->
     <main>
-        <h1>{{ $PageHeader }}</h1>
+        <!-- Centered Image Only -->
+        <div class="intro-image">
+            <img src="{{ asset('welcome_images/' . $IntroBlock['image']) }}" alt="Welcome Image">
+        </div>
 
-        <p class="welcome-text">
-            @foreach ($WelcomeParagraph as $line)
-                {{ $line }}<br>
-            @endforeach
-        </p>
-
+        <!-- Cards -->
         <div class="cards">
-            @foreach ($WelcomeCards as $card)
+            @foreach ($WelcomeCards as $index => $card)
                 <div class="card">
-                    <img src="{{ asset('placeholder/image_placeholder.png') }}" alt="{{ $card['heading'] }}">
+                    <img src="{{ asset('welcome_images/welcome_image_' . ($index + 1) . '.png') }}" alt="{{ $card['heading'] }}">
                     <h2>{{ $card['heading'] }}</h2>
                     <p>{{ $card['text'] }}</p>
                 </div>

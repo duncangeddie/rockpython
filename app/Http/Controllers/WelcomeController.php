@@ -9,23 +9,27 @@ class WelcomeController extends Controller
     public function index()
     {
         return view('welcome', [
-            'PageHeader' => 'Welcome to RockPython 🚀',
-            'WelcomeParagraph' => [
-                'RockPython is a site dedicated to covering all aspects of Python.',
-                'Sign in or create an account to explore the Python language.'
+            'IntroBlock' => [
+                'image'   => 'welcome_banner.png', // store in public/welcome_images/
+                'heading' => 'Welcome to RockPython',
+                'text'    => 'Your hub for Python projects, code snippets, and tutorials.',
             ],
             'WelcomeCards' => [
                 [
                     'heading' => 'Python Code Base',
-                    'text' => 'Explore a rich collection of Python code snippets and libraries.'
+                    'text'    => 'Explore a rich collection of Python code snippets and libraries.',
                 ],
                 [
-                    'heading' => 'Starter Projects',
-                    'text' => 'Kickstart your learning with beginner-friendly Python projects.'
+                    'heading' => 'DIY Projects',
+                    'text'    => 'Kickstart your learning with beginner-friendly and advanced Python projects.',
                 ],
                 [
                     'heading' => 'Blog',
-                    'text' => 'Read articles and tutorials on Python best practices.'
+                    'text'    => 'Regular updates on Python',
+                ],
+                [
+                    'heading' => 'Contact Us',
+                    'text'    => 'Feel free to contact me if you would like a specific tutorial or project',
                 ],
             ],
         ]);
