@@ -1,0 +1,118 @@
+/* General body styling */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff; /* white background */
+    color: #000000;            /* black text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    height: 60px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+}
+
+/* Logo */
+.logo img {
+    height: 70px;
+    width: auto;
+}
+
+/* Auth buttons */
+.auth-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.auth-buttons a {
+    display: inline-block;
+    text-align: center;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+    color: #ffffff;
+}
+
+.auth-buttons a:first-child {
+    background-color: #2563eb;
+}
+.auth-buttons a:first-child:hover {
+    background-color: #1e40af;
+}
+.auth-buttons a:last-child {
+    background-color: #16a34a;
+}
+.auth-buttons a:last-child:hover {
+    background-color: #15803d;
+}
+
+/* Main content */
+main {
+    margin-top: 0;
+    text-align: center;
+    padding: 24px;
+    color: #000000;
+}
+
+/* Heading */
+main h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+/* Paragraphs */
+.welcome-text {
+    font-size: 18px;
+    color: #333333;
+    max-width: 640px;
+    margin: 0 auto 64px auto;
+    line-height: 1.6;
+}
+
+/* Cards grid */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 32px;
+    max-width: 960px;
+    margin: 0 auto;
+    color: #000000;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000000;
+}
+
+.card img {
+    height: 128px;
+    width: 128px;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.card h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #333333;
+}
