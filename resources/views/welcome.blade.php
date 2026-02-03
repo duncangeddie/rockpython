@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{ asset('css/welcome.blade.css') }}">
 </head>
 
-<body>
+<body style="background: url('{{ asset('welcome_images/welcome_background.png') }}') no-repeat center center fixed; background-size: cover;">
     <!-- Header -->
     <header>
         <div class="logo">

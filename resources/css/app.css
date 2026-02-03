@@ -8,3 +8,14 @@
 [x-cloak] {
     display: none;
 }
+
+/* Force nav links to stay white */
+nav .nav-link,
+nav .nav-link:visited {
+    color: #ffffff !important;
+}
+
+nav .nav-link.active {
+    color: #ffffff !important;
+    border-bottom: 2px solid #ffffff; /* optional underline for active */
+}

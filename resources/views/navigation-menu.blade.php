@@ -2,6 +2,8 @@
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
+
+            <!-- Left side: Logo + Navigation Links -->
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
@@ -12,18 +14,22 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                    <x-nav-link href="{{ route('dashboard') }}"
+                                :active="request()->routeIs('dashboard')"
+                                class="text-white hover:text-gray-300">
                         {{ __('Dashboard') }}
                     </x-nav-link>
 
-                    <x-nav-link href="{{ route('library') }}" :active="request()->routeIs('library')">
+                    <x-nav-link href="{{ route('library') }}"
+                                :active="request()->routeIs('library')"
+                                class="text-white hover:text-gray-300">
                         {{ __('Library') }}
                     </x-nav-link>
                 </div>
             </div>
 
-            <!-- Right side (profile/settings) -->
-            <div class="hidden sm:flex sm:items-center sm:ms-6">
+            <!-- Right side: Profile/Settings -->
+            <div class="hidden sm:flex sm:items-center">
                 <div class="ms-3 relative">
                     <x-dropdown align="right" width="48">
                         <x-slot name="trigger">

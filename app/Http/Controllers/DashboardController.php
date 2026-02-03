@@ -9,10 +9,11 @@ class DashboardController extends Controller
     public function index()
     {
         $DashboardPage = [
-            'logo' => 'logo_short.png',
             'background' => 'dashboard_background.png',
+            'logo' => 'logo_short.png',
         ];
 
         return view('dashboard', compact('DashboardPage'));
     }
 }
+
