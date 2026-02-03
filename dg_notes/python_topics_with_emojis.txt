@@ -1,0 +1,74 @@
+Abstract Classes 🏛️ – Classes that cannot be instantiated directly, used as blueprints for other classes.
+Algorithms 📐 – Step-by-step procedures for solving problems.
+Asyncio ⚡ – Library for writing concurrent code using async/await syntax.
+Attributes 🏷️ – Variables bound to objects or classes.
+Bitwise Operators 🔀 – Operators that perform operations on binary representations of integers.
+Boolean Logic 🔒 – True/False values and logical operations.
+Classes 🧩 – Blueprints for creating objects in object-oriented programming.
+Comprehensions ✨ – Concise syntax for creating lists, sets, and dictionaries.
+Concurrency 🔄 – Running multiple tasks simultaneously.
+Context Managers 📂 – Objects that manage resources with `with` statements.
+CSV Handling 📊 – Reading and writing CSV files.
+Data Types 🔢 – Built-in types like int, float, str, list, dict, set, tuple.
+Databases 🗄️ – Storing and retrieving data.
+Debugging 🐞 – Identifying and fixing errors.
+Decorators 🎨 – Functions that modify the behavior of other functions.
+Dictionaries 📖 – Key-value data structures.
+Docstrings 📝 – Strings used to document modules, classes, and functions.
+Dynamic Typing 🔧 – Variables can change type at runtime.
+Exceptions 🚨 – Errors handled with `try`, `except`, `finally`.
+File Handling 📁 – Reading and writing files.
+Functions 🛠️ – Reusable blocks of code defined with `def`.
+Garbage Collection 🗑️ – Automatic memory management.
+Generators 🔂 – Functions that yield values one at a time.
+Global Variables 🌍 – Variables accessible throughout a program.
+Hashing 🧮 – Converting data into fixed-size values.
+Identifiers 🆔 – Names used for variables, functions, classes, etc.
+Imports 📦 – Bringing in modules and packages.
+Inheritance 👪 – Mechanism for creating new classes from existing ones.
+Input/Output 🎤 – Reading user input and printing output.
+Integers ➕ – Whole number data type.
+Interpreters 💻 – Programs that execute Python code.
+Iterators 🔁 – Objects that can be iterated over.
+JSON Handling 🌐 – Reading and writing JSON data.
+Keywords 🔑 – Reserved words in Python.
+Lambda Functions 🪄 – Anonymous functions defined with `lambda`.
+Libraries 📚 – Collections of modules providing functionality.
+Lists 📋 – Ordered, mutable collections of items.
+Logging 🗒️ – Recording events during program execution.
+Loops 🔃 – Iterating over sequences.
+Memory Management 🧠 – Allocation and deallocation of memory.
+Modules 🧱 – Files containing Python code.
+Multiprocessing 🏭 – Running tasks in parallel using multiple processes.
+Mutable vs Immutable ⚖️ – Objects that can or cannot be changed after creation.
+Namespaces 🗂️ – Containers mapping names to objects.
+NumPy 📈 – Library for numerical computing and arrays.
+Object-Oriented Programming 🏗️ – Programming paradigm using classes and objects.
+Operators ➗ – Symbols for arithmetic, comparison, and logical operations.
+Packages 🎁 – Collections of modules organized in directories.
+Pandas 🐼 – Library for data analysis and manipulation.
+Parsing 🔍 – Analyzing strings or data formats.
+Pickle 🥒 – Module for serializing and deserializing Python objects.
+Polymorphism 🦋 – Ability of different classes to be used interchangeably.
+Properties 🏠 – Managed attributes using `@property`.
+Pytest 🧪 – Framework for writing and running tests.
+Recursion 🔄 – Functions calling themselves to solve problems.
+Regular Expressions 🧵 – Patterns for matching and manipulating strings.
+Scope 🎯 – Region where a variable is accessible.
+Sets 🎲 – Unordered collections of unique items.
+Sockets 📡 – Low-level networking interface.
+SQLite 🪶 – Lightweight database included with Python.
+Standard Library 🏛️ – Built-in modules and packages.
+Strings 🔤 – Sequences of characters.
+Subprocess ⚙️ – Running external commands and processes.
+Syntax 📏 – Rules defining valid Python code.
+Testing 🧾 – Writing tests to ensure code correctness.
+Threads 🧵 – Lightweight units of execution.
+Tuples 👫 – Ordered, immutable collections of items.
+Type Hinting 🖊️ – Adding type annotations to code.
+Unittest 🧰 – Built-in testing framework.
+Variables 📍 – Named references to values.
+Virtual Environments 🌱 – Isolated environments for managing dependencies.
+XML Handling 📰 – Parsing and generating XML data.
+Yield 🎯 – Keyword used in generators to produce values.
+Zip Function 🔗 – Built-in function to combine iterables element-wise.

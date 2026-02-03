@@ -1,17 +1,32 @@
-/* Library layout */
-.library-card {
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 24px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+/* Topic grid */
+.library-topics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 960px;
     margin: 40px auto;
-    max-width: 600px;
-    text-align: center;
 }
 
-/* Optional: heading styling */
-.library-card h1 {
-    color: #1a202c; /* dark gray for readability */
-    font-size: 1.75rem;
-    font-weight: 700;
+/* Topic box styling */
+.library-topic {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: rgba(255, 255, 255, 0.75); /* 75% transparent white */
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    text-decoration: none; /* remove underline */
+}
+
+.library-topic img {
+    height: 50px;   /* 25% bigger than 40px */
+    width: 50px;
+    object-fit: contain;
+}
+
+.library-topic span {
+    font-size: 1rem; /* same as nav bar text size */
+    font-weight: 600;
+    color: #1a202c;
 }
