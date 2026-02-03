@@ -1,0 +1,9 @@
+/* Styles for Topic 1 page */
+
+.page-header {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1a202c; /* dark gray */
+}

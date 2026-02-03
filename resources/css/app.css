@@ -1,5 +1,7 @@
 @import './dashboardblade.css';
 @import './libraryblade.css';
+@import './librarytopic1.css';
+@import './librarytopic2.css';   /* add more as I create them */
 
 @tailwind base;
 @tailwind components;
