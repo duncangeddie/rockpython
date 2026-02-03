@@ -1,0 +1,29 @@
+/* Dashboard layout */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Navigation bar */
+nav.bg-black {
+    background-color: #000000;
+    border-bottom: 1px solid #1f2937; /* Tailwind gray-800 */
+}
+
+/* Logo */
+nav img {
+    height: 36px;
+    width: auto;
+}
+
+/* Dashboard card */
+.dashboard-card {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+nav .space-x-8 a {
+    color: white !important;
+}
+

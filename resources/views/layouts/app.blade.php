@@ -20,7 +20,10 @@
     <body class="font-sans antialiased">
         <x-banner />
 
-        <div class="min-h-screen bg-gray-100">
+        <!-- Apply background here -->
+        <div class="min-h-screen"
+             style="background: url('{{ asset('dashboard_images/' . ($DashboardPage['background'] ?? 'dashboard_background.png')) }}') no-repeat center center fixed; background-size: cover;">
+
             @livewire('navigation-menu')
 
             <!-- Page Heading -->
