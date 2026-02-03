@@ -1,0 +1,10 @@
+/* Library layout */
+.library-card {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    margin: 40px auto;
+    max-width: 600px;
+    text-align: center;
+}

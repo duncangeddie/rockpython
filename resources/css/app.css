@@ -1,4 +1,5 @@
 @import './dashboardblade.css';
+@import './libraryblade.css';
 
 @tailwind base;
 @tailwind components;

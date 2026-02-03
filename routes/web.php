@@ -5,13 +5,14 @@ use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\LibraryController;
 
 // Root route: redirect based on authentication
 Route::get('/', function () {
     if (auth()->check()) {
         return redirect()->route('dashboard');
     }
-    // Call the controller properly (not statically)
+    // Properly call the WelcomeController
     return (new WelcomeController)->index();
 });
 
@@ -26,5 +27,5 @@ Route::middleware([
     'verified',
 ])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/library', [LibraryController::class, 'index'])->name('library');
 });
-
