@@ -2,8 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\LoginController;
 
 Route::get('/', [WelcomeController::class, 'index']);
+Route::get('/login', [LoginController::class, 'index'])->name('login');
 
 Route::middleware([
     'auth:sanctum',

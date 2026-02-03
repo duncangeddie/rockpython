@@ -1,0 +1,40 @@
+/* Authentication card (form container) */
+.x-authentication-card {
+    background-color: #ffffff; /* white form background */
+    color: #000000;            /* black text */
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    max-width: 400px;
+    margin: 80px auto; /* center form vertically with spacing */
+}
+
+/* Inputs */
+input[type="email"],
+input[type="password"] {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/* Labels */
+label, .text-sm {
+    color: #000000;
+}
+
+/* Buttons */
+button, .x-button {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover, .x-button:hover {
+    background-color: #1e40af;
+}
