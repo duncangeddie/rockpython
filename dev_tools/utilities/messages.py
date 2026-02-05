@@ -121,6 +121,22 @@ def json_messages(command_parameter,file_name_parameter):
     else:
         return None
 
+def paths_messages(command_parameter):
+    #process command
+    command = str(command_parameter)
+
+    #run command
+    if command == "load_base_folders": #cmd0
+        emoji_prefix = str("⚠")
+        indent_quantity = int(1)
+        indent = str("    "*indent_quantity)
+        message = str(f"{indent}{emoji_prefix} ABC")
+        print(message)
+    elif command == "": #cmd1
+        print("WIP")
+    else:
+        return None
+
 #TEST ALL MESSAGES IN THIS SCRIPT
 """
 # Loader messages

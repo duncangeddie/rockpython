@@ -11,6 +11,7 @@ def run_paths_utility(command_parameter):
     #cmd1 function
     cmd1 = str("load_base_folders")
     def load_base_folders():
+
         os = __import__("os")
         base_directory = load_base_directory()
         base_folders_dict = {
@@ -62,7 +63,7 @@ def run_paths_utility(command_parameter):
         print("⚠️ Error: Unknown command")
 
 ###TESTING CODE###
-run_paths_utility("load_base_directory")
-run_paths_utility("load_base_folders")
-run_paths_utility("print_base_folders")
-run_paths_utility("export_base_folders")
+#run_paths_utility("load_base_directory")
+#run_paths_utility("load_base_folders")
+#run_paths_utility("print_base_folders")
+#run_paths_utility("export_base_folders")
