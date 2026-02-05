@@ -30,11 +30,11 @@ def run_paths_utility(command_parameter):
     #cmd3 function
     cmd3 = str("export_base_folders")
     def export_base_folders():
-        export_name = f"base_folders_{generate_timestamp()}.json"
-        export_path = "/home/duncan/Desktop/rockpython/dev_tools/exports/"+"/"+export_name
+        file_name = f"base_folders_{generate_timestamp()}.json"
+        file_path = "/home/duncan/Desktop/rockpython/dev_tools/exports/"+"/"+export_name
         data = load_base_folders()
         try:
-            with open(export_path,'w') as f:
+            with open(file_path,'w') as f:
                 json.dump(data,f,indent=0)
         except FileNotFoundError:
             print("Error: The directory does not exist.")
