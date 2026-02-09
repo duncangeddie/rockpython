@@ -126,20 +126,35 @@ def paths_messages(command_parameter):
     command = str(command_parameter)
 
     #run command
-    if command == "load_base_folders": #cmd0
-        emoji_prefix = str("⚠")
-        indent_quantity = int(1)
+    if command == "load_base_directory": #cmd0
+        emoji_prefix = str("⚙")
+        indent_quantity = int(0)
         indent = str("    "*indent_quantity)
-        message = str(f"{indent}{emoji_prefix} ABC")
+        message = str(f"{indent}{emoji_prefix} Loading base directory")
         print(message)
-    elif command == "": #cmd1
-        print("WIP")
+    elif command == "load_base_folders": #cmd1
+        emoji_prefix = str("⚙")
+        indent_quantity = int(0)
+        indent = str("    "*indent_quantity)
+        message = str(f"{indent}{emoji_prefix} Loading folder structures")
+        print(message)
+    elif command == "print_base_folders": #cmd2
+        emoji_prefix = str("⚙")
+        indent_quantity = int(0)
+        indent = str("    "*indent_quantity)
+        message = str(f"{indent}{emoji_prefix} Printing base folders")
+        print(message)
     else:
         return None
 
 #TEST ALL MESSAGES IN THIS SCRIPT
+
+#Paths messages
+"""
+paths_messages()
 """
 # Loader messages
+"""
 loader_messages("reset_py_packages")
 loader_messages("load_py_packages")
 loader_messages("import_py_packages")
@@ -147,14 +162,18 @@ loader_messages("print_py_packages")
 loader_messages("adding_py_package")
 loader_messages("edit_py_package")
 loader_messages("delete_py_package")
+"""
 
 # Error messages
+"""
 error_messages("file_not_found")
 error_messages("permission_denied")
 error_messages("type")
 error_messages("unexpected")
+"""
 
 # JSON messages
+"""
 json_messages("loading_json", "test.json")
 json_messages("loaded_json", "test.json")
 json_messages("saving_json", "test.json")
