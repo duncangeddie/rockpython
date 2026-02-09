@@ -53,6 +53,7 @@ def loader_messages(command_parameter):
     else:
         return None
 
+#!#------------------------------------------------------------------
 def error_messages(command_parameter):
     #process command
     command = str(command_parameter)
@@ -90,6 +91,7 @@ def error_messages(command_parameter):
     else:
         return None
 
+#!#------------------------------------------------------------------
 def json_messages(command_parameter,file_name_parameter):
     #process command
     command = str(command_parameter)
@@ -126,6 +128,7 @@ def json_messages(command_parameter,file_name_parameter):
     else:
         return None
 
+#!#------------------------------------------------------------------
 def paths_messages(command_parameter):
     #process command
     command = str(command_parameter)
@@ -152,6 +155,7 @@ def paths_messages(command_parameter):
     else:
         return None
 
+#!#------------------------------------------------------------------
 def run_build_messages(command_parameter):
     #process command
     command = str(command_parameter)
@@ -166,7 +170,27 @@ def run_build_messages(command_parameter):
     else:
         return None
 
+#!#------------------------------------------------------------------
+def run_git_messages(command_parameter):
+    #process command
+    command = str(command_parameter)
+
+    #run command
+    if command == "run_git_push":
+        emoji_prefix = str("⚙")
+        indent_quantity = int(0)
+        indent = str("    "*indent_quantity)
+        message = str(f"{indent}{emoji_prefix} Run git push")
+        print(message)
+    else:
+        return None
+
+#!#------------------------------------------------------------------
+
 ###TESTING CODE###
+
+#Run git messages
+run_git_messages("run_git_push")
 
 #Run build messages
 """
