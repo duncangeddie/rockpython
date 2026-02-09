@@ -190,7 +190,9 @@ def run_git_messages(command_parameter):
 ###TESTING CODE###
 
 #Run git messages
+"""
 run_git_messages("run_git_push")
+"""
 
 #Run build messages
 """
