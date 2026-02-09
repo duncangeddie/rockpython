@@ -82,6 +82,11 @@ def error_messages(command_parameter):
         indent = str("    "*indent_quantity)
         message = str(f"{emoji_prefix} Error: Unexpected")
         print(message)
+    elif command == "subprocess_called":
+        emoji_prefix = str("⚠️")
+        indent_quantity = int(1)
+        indent = str("    "*indent_quantity)
+        message = str(f"{emoji_prefix} Error: Subprocess called")
     else:
         return None
 
@@ -126,7 +131,7 @@ def paths_messages(command_parameter):
     command = str(command_parameter)
 
     #run command
-    if command == "load_base_directory": #cmd0
+    if command == "load_base_directory":
         emoji_prefix = str("⚙")
         indent_quantity = int(0)
         indent = str("    "*indent_quantity)
@@ -147,35 +152,56 @@ def paths_messages(command_parameter):
     else:
         return None
 
-#TEST ALL MESSAGES IN THIS SCRIPT
+def run_build_messages(command_parameter):
+    #process command
+    command = str(command_parameter)
+
+    #run command
+    if command == "run_production_build":
+        emoji_prefix = str("⚙")
+        indent_quantity = int(0)
+        indent = str("    "*indent_quantity)
+        message = str(f"{indent}{emoji_prefix} Running production build")
+        print(message)
+    else:
+        return None
+
+###TESTING CODE###
+
+#Run build messages
+"""
+run_build_messages("run_production_build")
+"""
 
 #Paths messages
 """
-paths_messages()
+paths_messages("load_base_directory") #TESTED 09/02/2026
+paths_messages("load_base_folders") #TESTED 09/02/2026
+paths_messages("print_base_folders") #TESTED 09/02/2026
 """
-# Loader messages
+#Loader messages
 """
-loader_messages("reset_py_packages")
-loader_messages("load_py_packages")
-loader_messages("import_py_packages")
-loader_messages("print_py_packages")
-loader_messages("adding_py_package")
-loader_messages("edit_py_package")
-loader_messages("delete_py_package")
-"""
-
-# Error messages
-"""
-error_messages("file_not_found")
-error_messages("permission_denied")
-error_messages("type")
-error_messages("unexpected")
+loader_messages("reset_py_packages") #TESTED 05/02/2026
+loader_messages("load_py_packages") #TESTED 05/02/2026
+loader_messages("import_py_packages") #TESTED 05/02/2026
+loader_messages("print_py_packages") #TESTED 05/02/2026
+loader_messages("adding_py_package") #TESTED 05/02/2026
+loader_messages("edit_py_package") #TESTED 05/02/2026
+loader_messages("delete_py_package") #TESTED 05/02/2026
 """
 
-# JSON messages
+#Error messages
 """
-json_messages("loading_json", "test.json")
-json_messages("loaded_json", "test.json")
-json_messages("saving_json", "test.json")
-json_messages("saved_json", "test.json")
+error_messages("file_not_found") #TESTED 05/02/2026
+error_messages("permission_denied") #TESTED 05/02/2026
+error_messages("type") #TESTED 05/02/2026
+error_messages("unexpected") #TESTED 05/02/2026
+"""
+
+#JSON messages
+"""
+json_messages("loading_json", "test.json") #TESTED 05/02/2026
+json_messages("loaded_json", "test.json") #TESTED 05/02/2026
+json_messages("saving_json", "test.json") #TESTED 05/02/2026
+json_messages("saved_json", "test.json") #TESTED 05/02/2026
 """

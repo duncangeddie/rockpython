@@ -269,9 +269,9 @@ def run_loader(command_parameter):
     if command == cmd0:
         reset_py_packages()
     elif command == cmd1:
-        load_py_packages()
+        return load_py_packages()
     elif command == cmd2:
-        import_py_packages()
+        return import_py_packages()
     elif command == cmd3:
         print_py_packages()
     elif command == cmd4:
