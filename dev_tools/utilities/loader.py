@@ -40,10 +40,10 @@ def run_loader(command_parameter):
         file_path = "/home/duncan/Desktop/rockpython/dev_tools/config/" + file_name
         #load json list
         try:
-            json_messages("loading_json",file_name)
+            #json_messages("loading_json",file_name)
             with open(file_path,'r') as f:
                 data = json.load(f)
-                json_messages("loaded_json",file_name)
+                #json_messages("loaded_json",file_name)
         #error exceptions for file dump
         except FileNotFoundError:
             error_messages("file_not_found")
@@ -60,13 +60,13 @@ def run_loader(command_parameter):
     #cmd2 function
     cmd2 = str("import_py_packages")
     def import_py_packages():
-        loader_messages("import_py_packages")
+        #loader_messages("import_py_packages")
         #define file path
         file_name = "python_packages.json"
         file_path = "/home/duncan/Desktop/rockpython/dev_tools/config/" + file_name
         #load json list and import packages with import error exceptions
         try:
-            json_messages("loading_json",file_name)
+            #json_messages("loading_json",file_name)
             with open(file_path, 'r') as f:
                 data = json.load(f)
             imported_modules = {}
@@ -76,12 +76,12 @@ def run_loader(command_parameter):
                     emoji_prefix = str("📦")
                     indent_quantity = int(2)
                     indent = str("    "*indent_quantity)
-                    print(f"{indent}{emoji_prefix} Successfully imported {pkg}")
+                    #print(f"{indent}{emoji_prefix} Successfully imported {pkg}")
                 except ImportError as e:
                     emoji_prefix = str("❌")
                     indent_quantity = int(2)
                     indent = str("    "*indent_quantity)
-                    print(f"{indent}{emoji_prefix} Failed to import {pkg}: {e}")
+                    #print(f"{indent}{emoji_prefix} Failed to import {pkg}: {e}")
             return imported_modules
         #error exceptions for file load
         except FileNotFoundError:

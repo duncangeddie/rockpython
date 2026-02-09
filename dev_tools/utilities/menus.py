@@ -37,7 +37,7 @@ def show_main_menu():
     print("-"*80)
 
 ### TESTING CODE ###
-show_main_menu()
+#show_main_menu()
 
 to_do = """
 - Move menu_options to a config file with CRUD options

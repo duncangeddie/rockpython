@@ -62,4 +62,4 @@ def run_build(command_parameter):
         print("⚠️ Error: Unknown command")
 
 ### TESTING CODE ###
-run_build("production_build")
+#run_build("production_build")
