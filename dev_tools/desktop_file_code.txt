@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=RockPython Dev Tools
+Comment=Shortcut to run_dev_tools.py
+Exec=konsole --hold -e bash -c "cd /home/duncan/Desktop/rockpython && PYTHONPATH=/home/duncan/Desktop/rockpython python3 dev_tools/run_dev_tools.py; exec bash"
+Icon=/home/duncan/Desktop/rockpython/public/logo/logo_full_round.png
+Terminal=false
+Type=Application
+Categories=Development;
